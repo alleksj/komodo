@@ -7,11 +7,13 @@ function Header() {
     return (
         <header>
             <div className='logo'>Logo</div>
+            <div className='navbar'>
+                <MenuItem title='Menu' />
+                <MenuItem title='About' />
+                <MenuItem title='Gallery' />
+                <MenuItem title='Private events' />
+            </div>
             {/* <MenuRoundedIcon /> */}
-            <MenuItem title='Menu' />
-            <MenuItem title='About' />
-            <MenuItem title='Gallery' />
-            <MenuItem title='Private events' />
             <button>
                 Reserve
             </button>
