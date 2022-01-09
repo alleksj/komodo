@@ -6,7 +6,7 @@ import MenuItem from './MenuItem';
 function Header() {
     return (
         <header>
-            <div className='logo'>Logo</div>
+            <div className='logo'>Komodo</div>
             <div className='navbar'>
                 <MenuItem title='Menu' />
                 <MenuItem title='About' />
