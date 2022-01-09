@@ -8,7 +8,6 @@ body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.1em;
-    background-color: #ffffff;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='199' viewBox='0 0 100 199'%3E%3Cg fill='%23ad985f' fill-opacity='0.15'%3E%3Cpath d='M0 199V0h1v1.99L100 199h-1.12L1 4.22V199H0zM100 2h-.12l-1-2H100v2z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -21,8 +20,10 @@ header {
     border-bottom: 1px solid transparent;
     box-shadow: 0 5px 10px rgb(38 30 28 / 0%);
     width: 100%;
-    z-index: -1;
+    z-index: 100;
     padding: 1rem 10rem;
+    position: sticky;
+    top:0
 }
 
 .logo {
@@ -86,6 +87,24 @@ button {
     line-height: 1.5;
     cursor: pointer;
 }
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: black;
+}
+.banner img:first-child {
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 2s;
+} 
+
+@keyframes fadeIn {
+    0% {opacity:0.5;}
+    100% {opacity:1;}
+  }
 
 @media (max-width: 400px) {
     .navbar-link {display: none;}
