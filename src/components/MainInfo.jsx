@@ -1,12 +1,15 @@
 import React from 'react';
 
-function MainInfo() {
+function MainInfo(props) {
     return (
         <div className='split'>
             <div>
-                <h1>Komodo is redefining today’s restaurant experience, one moment at a time.</h1>
+                <h1>Dobrodošli na najlepši splav na zemunskom keju.</h1>
+                <p>Posetite nas i uživajte u prijatnoj atmosferi našeg lokala kao i u ukusnoj hrani koju pripremamo za Vas.</p>
             </div>
-            <div>This is the image</div>
+            <div className='food-image'>
+                <img src={props.image}></img>
+            </div>
         </div>
     )
 }
