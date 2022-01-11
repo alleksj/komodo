@@ -1,6 +1,6 @@
-import { MenuRounded, NoEncryption, NoteOutlined } from '@material-ui/icons';
 import React from 'react';
 import MenuItem from './MenuItem';
+import Button from './Button';
 // import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
 function Header() {
@@ -13,10 +13,7 @@ function Header() {
                 <MenuItem title='Gallery' />
                 <MenuItem title='Private events' />
             </div>
-            {/* <MenuRoundedIcon /> */}
-            <button>
-                Reserve
-            </button>
+            <Button text='Reserve' />
         </header>
     );
 }

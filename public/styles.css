@@ -92,6 +92,11 @@ button {
     cursor: pointer;
 }
 
+button:hover{
+    background-color: #80734d;
+    transform: scale(1.1);
+}
+
 /* Banner */
 .banner {
     position: relative;
