@@ -2,7 +2,7 @@ import React from 'react';
 
 function MenuItem(props) {
     const handleOnClick = (e) => {
-        props.getActiveItem(e.target.textContent);
+        props.passedPropFromApp(e.target.textContent);
     }
     return (
         <div className='navbar-link' onClick={handleOnClick}>

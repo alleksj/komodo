@@ -4,19 +4,19 @@ import Button from './Button';
 // import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
 function Header(props) {
-    const getActiveItem = (e) => {
+    const getHome = (e) => {
         props.getActiveItem("Home");
     }
     return (
         <header>
-            <div className='logo' onClick={getActiveItem}>
+            <div className='logo' onClick={getHome}>
                 Komodo
             </div>
             <div className='navbar'>
-                <MenuItem title='Menu' getActiveItem={props.getActiveItem} />
-                <MenuItem title='About' getActiveItem={props.getActiveItem} />
-                <MenuItem title='Gallery' getActiveItem={props.getActiveItem} />
-                <MenuItem title='Private events' getActiveItem={props.getActiveItem} />
+                <MenuItem title='Menu' passedPropFromApp={props.getActiveItem} />
+                <MenuItem title='About' passedPropFromApp={props.getActiveItem} />
+                <MenuItem title='Gallery' passedPropFromApp={props.getActiveItem} />
+                <MenuItem title='Private events' passedPropFromApp={props.getActiveItem} />
             </div>
             <Button text='Reserve' />
         </header>
