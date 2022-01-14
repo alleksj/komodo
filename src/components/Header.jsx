@@ -13,12 +13,12 @@ function Header(props) {
                 Komodo
             </div>
             <div className='navbar'>
-                <MenuItem title='Menu' passedPropFromApp={props.getActiveItem} />
-                <MenuItem title='About' passedPropFromApp={props.getActiveItem} />
-                <MenuItem title='Gallery' passedPropFromApp={props.getActiveItem} />
-                <MenuItem title='Private events' passedPropFromApp={props.getActiveItem} />
+                <MenuItem title='Meni' passedPropFromApp={props.getActiveItem} />
+                <MenuItem title='O nama' passedPropFromApp={props.getActiveItem} />
+                <MenuItem title='Galerija' passedPropFromApp={props.getActiveItem} />
+                <MenuItem title='Privatni događaji' passedPropFromApp={props.getActiveItem} />
             </div>
-            <Button text='Reserve' />
+            <Button text='Rezerviši' />
         </header>
     );
 }
