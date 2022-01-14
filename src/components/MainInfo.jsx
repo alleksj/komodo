@@ -10,7 +10,7 @@ function MainInfo(props) {
                 <Button text='O nama' />
             </div>
             <div className='food-image'>
-                <img src={props.image} alt='Dish'></img>
+                <img src={require('../images/home_food.jpg')} alt='Dish'></img>
             </div>
         </div>
     )
