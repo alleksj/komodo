@@ -1,5 +1,5 @@
 import React from 'react';
-import MenuItem from './MenuItem';
+import NavItem from './NavItem';
 import Button from './Button';
 // import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
@@ -13,10 +13,10 @@ function Header(props) {
                 Komodo
             </div>
             <div className='navbar'>
-                <MenuItem title='Meni' passedPropFromApp={props.getActiveItem} />
-                <MenuItem title='O nama' passedPropFromApp={props.getActiveItem} />
-                <MenuItem title='Galerija' passedPropFromApp={props.getActiveItem} />
-                <MenuItem title='Privatni događaji' passedPropFromApp={props.getActiveItem} />
+                <NavItem title='Meni' passedPropFromApp={props.getActiveItem} />
+                <NavItem title='O nama' passedPropFromApp={props.getActiveItem} />
+                <NavItem title='Galerija' passedPropFromApp={props.getActiveItem} />
+                <NavItem title='Privatni događaji' passedPropFromApp={props.getActiveItem} />
             </div>
             <Button text='Rezerviši' />
         </header>
