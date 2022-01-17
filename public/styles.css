@@ -107,7 +107,12 @@ button:hover{
     height: 100%;
     width: 100%;
     animation: fadeIn 2s;
+    filter: brightness(50%);
 } 
+
+.homeBanner {
+    filter: brightness(100%) !important;
+}
 
 .centered {
     position: absolute;

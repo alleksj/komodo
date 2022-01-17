@@ -41,7 +41,7 @@ function Banner(props) {
                     </div>
                 )
             default:
-                return <img src={require('../images/main_banner.jpg')} alt='Komodo'></img>;
+                return <img className="homeBanner" src={require('../images/main_banner.jpg')} alt='Komodo'></img>;
         }
     }
     return (
