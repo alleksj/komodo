@@ -1,13 +1,14 @@
 import React from 'react';
 import Button from './Button';
+import Menu from './Menu'
 
 function MainInfo(props) {
     const renderSwitch = (param) => {
         switch (param) {
             case 'Meni':
                 return (
-                    <div className='menu'>
-
+                    <div>
+                        <Menu />
                     </div>
                 )
             case 'O nama':

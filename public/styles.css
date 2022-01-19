@@ -198,7 +198,92 @@ footer p {
     display: flex;
     letter-spacing: 2px;
     color: #261e1c;
+    padding: 10px;
+    justify-content: center;
 }
+
+.menu nav {
+    margin: 40px 10px;
+    width: 40%;
+    padding: 10px; 
+    position: relative;
+    display: flex;
+    font-weight: 400;
+}
+
+/* .menu-grid {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    padding: 40px 20px;
+    background: #fff;
+    border-radius: 50px;
+     */
+
+        /* .menu-items { 
+          padding: 1rem 1.5rem;
+          display: flex;
+          border: #efefef 1px solid;
+          border-top: none;
+          ${mq[0]} {
+            display: grid;
+            img {
+              margin-bottom: 10px;
+            }
+          }
+
+          &:last-child {
+            border-bottom: none;
+          }
+
+          &:nth-child(odd) {
+            border-left: none;
+            ${mq[2]} {
+              border-right: none;
+            }
+          }
+
+          &:nth-child(even) {
+            border-right: none;
+            ${mq[2]} {
+              border-left: none;
+            }
+          }
+
+          .item-content {
+            display: grid;
+            padding: 0 1rem;
+
+            p {
+              font-size: 0.8rem;
+              ${mq[(0, 1)]} {
+                font-size: 0.7rem;
+              }
+            }
+
+            .item-title-box {
+              display: flex;
+              justify-content: space-between;
+
+              .item-title,
+              .item-price {
+                font-size: 1rem;
+                ${mq[(0, 1)]} {
+                  font-size: 0.8rem;
+                }
+              }
+            }
+          }
+        }
+
+        img {
+          height: 85px;
+          ${mq[(0, 1)]} {
+            height: 75px;
+          }
+          cursor: pointer;
+        /* } */
+/* } */
 
 
 /* Other */
