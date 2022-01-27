@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from './Button';
-import Menu from './Menu';
-import NavItem from './NavItem';
+import Menu from './menu-components/Menu';
 
 function MainInfo(props) {
     const renderSwitch = (param) => {
@@ -9,13 +8,6 @@ function MainInfo(props) {
             case 'Meni':
                 return (
                     <div>
-                        <nav className='menu-navbar'>
-                            <NavItem className="menu-navitem" title="Sve" />
-                            <NavItem className="menu-navitem" title="Predjela" />
-                            <NavItem className="menu-navitem" title="Glavna jela" />
-                            <NavItem className="menu-navitem" title="Dezerti" />
-                            <NavItem className="menu-navitem" title="Pića" />
-                        </nav>
                         <Menu />
                     </div>
                 )
