@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Header.css';
 import NavItem from './NavItem';
 import Button from './Button';
 // import MenuRoundedIcon from '@material-ui/icons/MenuRounded';

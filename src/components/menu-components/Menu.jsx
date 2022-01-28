@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../styles/Menu.css';
 import MenuNav from './MenuNav';
 import MenuData from "../../data/menu";
 

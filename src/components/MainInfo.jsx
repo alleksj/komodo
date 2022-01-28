@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/MainInfo.css';
 import Button from './Button';
 import Menu from './menu-components/Menu';
 
