@@ -1,21 +1,14 @@
 import React, { useState } from 'react';
-import { motion } from "framer-motion";
 import MenuNav from './MenuNav';
 import MenuData from "../../data/menu";
 
 function Menu() {
     // State
     const [activeMenuItem, setActiveMenuItem] = useState("Sve");
+    const [delay, setDelay] = useState();
 
     const changeMenu = (item) => {
         setActiveMenuItem(item);
-    }
-
-    const container = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-        },
     }
 
     // Switch what is displayed
@@ -41,14 +34,11 @@ function Menu() {
                 <MenuNav className="menu-navitem" changeMenu={changeMenu} title="Ručak" />
                 <MenuNav className="menu-navitem" changeMenu={changeMenu} title="Šejkovi" />
             </nav>
-            <motion.div
+            <div
                 className='menu-grid'
-                variants={container}
-                initial="hidden"
-                animate="visible"
             >
                 {displayMenu(activeMenuItem)}
-            </motion.div>
+            </div>
         </>
     )
 }
