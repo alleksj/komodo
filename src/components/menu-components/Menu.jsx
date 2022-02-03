@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import '../../styles/Menu.css';
 import MenuNav from './MenuNav';
+import MenuItem from './MenuItem';
 import MenuData from "../../data/menu";
 
 function Menu() {
     // State
     const [activeMenuItem, setActiveMenuItem] = useState("Sve");
-    const [delay, setDelay] = useState();
 
     const changeMenu = (item) => {
         setActiveMenuItem(item);
@@ -16,13 +16,43 @@ function Menu() {
     const displayMenu = (menu) => {
         switch (menu) {
             case 'Doručak':
-                return <h1>Hello Doručak</h1>
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "breakfast") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
             case 'Ručak':
-                return <h1>Hello Ručak</h1>
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "lunch") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
             case 'Šejkovi':
-                return <h1>Hello Šejkovi</h1>
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "shakes") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
             default:
-                return <h1>Hello Sve</h1>
+                return <>
+                    {MenuData.map((item, index) => {
+                        return (
+                            <MenuItem title={item.title} key={index} description={item.desc} />
+                        )
+                    })}
+                </>
         }
     };
     // Render
