@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/NavItem.css';
 
 function NavItem(props) {
     const handleOnClick = (e) => {
@@ -7,7 +8,7 @@ function NavItem(props) {
     return (
         <div className='navbar-link' onClick={handleOnClick}>
             <ul>
-                <li><a href='#' className='navbar-link-underline'>{props.title}</a></li>
+                <li><a href='#'>{props.title}</a></li>
             </ul>
         </div>
 

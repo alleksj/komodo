@@ -1,3 +1,11 @@
+.menu-navbar {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
 .menu-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;

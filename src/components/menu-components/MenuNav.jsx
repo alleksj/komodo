@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/MenuNav.css';
 
 function MenuNav(props) {
     const handleOnClick = (e) => {
@@ -6,12 +7,11 @@ function MenuNav(props) {
         props.changeMenu(e.target.textContent);
     }
     return (
-        <div className='navbar-link' onClick={handleOnClick}>
+        <div className='navbar-link-menu' onClick={handleOnClick}>
             <ul>
-                <li><a href='#' className='navbar-link-underline'>{props.title}</a></li>
+                <li><a href='#'>{props.title}</a></li>
             </ul>
         </div>
-
     );
 }
 

@@ -60,10 +60,10 @@ function Menu() {
     return (
         <>
             <nav className='menu-navbar'>
-                <MenuNav className="menu-navitem" changeMenu={changeMenu} title="Sve" />
-                <MenuNav className="menu-navitem" changeMenu={changeMenu} title="Doručak" />
-                <MenuNav className="menu-navitem" changeMenu={changeMenu} title="Ručak" />
-                <MenuNav className="menu-navitem" changeMenu={changeMenu} title="Šejkovi" />
+                <MenuNav changeMenu={changeMenu} title="Sve" />
+                <MenuNav changeMenu={changeMenu} title="Doručak" />
+                <MenuNav changeMenu={changeMenu} title="Ručak" />
+                <MenuNav changeMenu={changeMenu} title="Šejkovi" />
             </nav>
             <div
                 className='menu-grid'
