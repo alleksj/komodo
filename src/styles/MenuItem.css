@@ -1,0 +1,14 @@
+.menu-item {
+    display: flex;
+    background-color: rgba(173, 152, 95, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    width: 80%;
+}
+
+.menu-item-title{
+
+}
+
+.menu-item-desc {
+}

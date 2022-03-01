@@ -1,10 +1,11 @@
 import React from 'react';
+import '../../styles/MenuItem.css';
 
 const MenuItem = (props) => {
     return (
         <div className="menu-item">
-            <h1>{props.title}</h1>
-            <p>{props.description}</p>
+            <h1 className="menu-item-title">{props.title}</h1>
+            <p className="menu-item-desc">{props.description}</p>
         </div>
     );
 };
