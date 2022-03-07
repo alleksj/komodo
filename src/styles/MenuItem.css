@@ -1,14 +1,21 @@
 .menu-item {
-    display: flex;
+    /* display: flex; */
     background-color: rgba(173, 152, 95, 0.1);
     border-radius: 20px;
     margin: 10px;
     width: 80%;
+    overflow: hidden;
+    animation: fadeInUp; 
+    animation-duration: 1s;
 }
 
 .menu-item-title{
-
+    font-size: 1rem;
+    margin: 20px;
 }
 
 .menu-item-desc {
+    font-size: 0.8rem;
+    margin: 20px;
+    width: 70%;
 }

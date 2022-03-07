@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import 'animate.css'
 import '../../styles/Menu.css';
 import MenuNav from './MenuNav';
 import MenuItem from './MenuItem';
@@ -7,6 +8,7 @@ import MenuData from "../../data/menu";
 function Menu() {
     // State
     const [activeMenuItem, setActiveMenuItem] = useState("Sve");
+    const [wait, setWait] = useState(0);
 
     const changeMenu = (item) => {
         setActiveMenuItem(item);
