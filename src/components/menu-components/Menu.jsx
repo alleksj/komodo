@@ -116,6 +116,76 @@ function Menu() {
                         }
                     })}
                 </>
+            case 'Specijal kafe':
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "specijal kafa") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
+            case 'Voda':
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "vode") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
+            case 'Energetski napici':
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "energetski napici") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
+            case 'Sokovi':
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "sokovi") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
+            case 'Piva i cideri':
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "piva") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
+            case 'Viski i žestina':
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "viski") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
+            case 'Rakije i likeri':
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "rakije") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
             default:
                 return <>
                     {MenuData.map((item, index) => {
@@ -141,6 +211,13 @@ function Menu() {
                 <MenuNav changeMenu={changeMenu} title="Desert" />
                 <MenuNav changeMenu={changeMenu} title="Prilozi i sosevi" />
                 <MenuNav changeMenu={changeMenu} title="Kafe i topli napici" />
+                <MenuNav changeMenu={changeMenu} title="Specijal kafe" />
+                <MenuNav changeMenu={changeMenu} title="Voda" />
+                <MenuNav changeMenu={changeMenu} title="Energetski napici" />
+                <MenuNav changeMenu={changeMenu} title="Sokovi" />
+                <MenuNav changeMenu={changeMenu} title="Piva i cideri" />
+                <MenuNav changeMenu={changeMenu} title="Viski i žestina" />
+                <MenuNav changeMenu={changeMenu} title="Rakije i likeri" />
             </nav>
             <div
                 className='menu-grid'
