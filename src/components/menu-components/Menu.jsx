@@ -186,6 +186,36 @@ function Menu() {
                         }
                     })}
                 </>
+            case 'Vina i šampanjci':
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "vina") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
+            case 'Kokteli':
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "kokteli") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
+            case 'Nargila':
+                return <>
+                    {MenuData.map((item, index) => {
+                        if (item.category === "nargila") {
+                            return (
+                                <MenuItem title={item.title} key={index} description={item.desc} />
+                            )
+                        }
+                    })}
+                </>
             default:
                 return <>
                     {MenuData.map((item, index) => {
@@ -218,6 +248,9 @@ function Menu() {
                 <MenuNav changeMenu={changeMenu} title="Piva i cideri" />
                 <MenuNav changeMenu={changeMenu} title="Viski i žestina" />
                 <MenuNav changeMenu={changeMenu} title="Rakije i likeri" />
+                <MenuNav changeMenu={changeMenu} title="Vina i šampanjci" />
+                <MenuNav changeMenu={changeMenu} title="Kokteli" />
+                <MenuNav changeMenu={changeMenu} title="Nargila" />
             </nav>
             <div
                 className='menu-grid'
