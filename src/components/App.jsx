@@ -1,23 +1,13 @@
-import React, { useState } from 'react';
-import '../styles/App.css';
-import Header from './Header';
-import Banner from './Banner';
-import MainInfo from './MainInfo';
-import Footer from './Footer';
+import '../styles/App.scss'
+
+import HomePage from './pages/HomePage/HomePage'
+// import React, { useState } from 'react'
+import React from 'react';
 
 function App() {
-    const [activeItem, setActiveItem] = useState("Home");
-
-    const changeDisplay = (item) => {
-        setActiveItem(item);
-    }
-
     return (
         <div>
-            <Header getActiveItem={changeDisplay} />
-            <Banner activeItem={activeItem} />
-            <MainInfo activeItem={activeItem} />
-            <Footer />
+            <HomePage />
         </div>
     );
 }
