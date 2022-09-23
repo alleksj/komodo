@@ -22,9 +22,8 @@ const BackgroundImage = ({type}) => {
     }
 }
     return (
-        <div>
+        <div className='background'>
             {backgroundChoice(type)}
-            <div className='overlay'/>
         </div>
     )
 }
