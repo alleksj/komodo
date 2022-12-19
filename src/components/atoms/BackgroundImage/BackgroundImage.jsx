@@ -1,34 +1,28 @@
 import './BackgroundImage.scss'
 
+import classNames from "classnames"
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const BackgroundImage = ({type}) => {
-    console.log(type)
-    const backgroundChoice = (page) => {
-    switch (page) {
-        case 'home':
-            return <img src={require('../../../images/backgrounds/main_banner.jpg')} alt='home'/>
-        case 'menu':
-            return <img src={require('../../../images/backgrounds/menu_banner.jpg')} alt='menu'/>
-        case 'gallery':
-            return <img src={require('../../../images/backgrounds/gallery_banner.jpg')} alt='gallery'/>
-        case 'about':
-            return <img src={require('../../../images/backgrounds/about_banner.jpg')} alt='about'/>
-        case 'events':
-            return <img src={require('../../../images/backgrounds/events_banner.jpg')} alt='events'/>
-        default:
-            return <img src={require('../../../images/backgrounds/main_banner.jpg')} alt='home'/>
-    }
-}
+const BackgroundImage = ({className, type}) => {
+
+    const backgroundClassnames = classNames(`background`, {
+        [className]: className,
+        "home-bg": type === "home",
+        "menu-bg": type === "menu",
+        "gallery-bg": type === "gallery",
+        "about-bg": type === "about",
+        "events-bg": type === "events",
+      })
+
     return (
-        <div className='background'>
-            {backgroundChoice(type)}
+        <div className={backgroundClassnames}>
         </div>
     )
 }
 
 BackgroundImage.propTypes = {
+    classNames: PropTypes.string,
     type: PropTypes.string.isRequired,
 };
 

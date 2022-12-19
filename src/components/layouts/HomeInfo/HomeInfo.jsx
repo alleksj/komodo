@@ -1,7 +1,6 @@
 import "./HomeInfo.scss"
 
 import Button from "../../atoms/Button/Button";
-import PropTypes from 'prop-types';
 import React from 'react';
 
 const HomeInfo = () => {
