@@ -4,12 +4,13 @@ import BackgroundImage from '../../atoms/BackgroundImage/BackgroundImage';
 import HomeInfo from '../../layouts/HomeInfo/HomeInfo';
 import React from 'react'
 import Svg from '../../atoms/Svg/Svg';
+import MenuIcon from '../../atoms/MenuIcon/MenuIcon';
 
 const HomePage = () => {
     return (
         <div className='homepage-wrapper'>
             <div className='top'>
-                <Svg icon="menu-bars" className="menu-icon"/>
+                <MenuIcon />
                 <BackgroundImage type='home' />
                 <div className='title'>
                     <h1>Dobrodošli u</h1>

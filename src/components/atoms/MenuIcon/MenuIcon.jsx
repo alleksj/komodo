@@ -1,18 +1,21 @@
 import './MenuIcon.scss'
 
-import PropTypes from 'prop-types';
 import React from 'react';
 
-const MenuIcon = ({iconClass}) => {
+const MenuIcon = () => {
+
+    const toggleMenu = (e) => {
+        const menuLines = e.currentTarget.classList
+        menuLines.toggle('change')
+    }
+
     return (
-        <div>
-            <img src={require('../../../images/icons/menu_icon.svg')} alt=''></img>
+        <div className='menu-bars' onClick={toggleMenu}>
+            <div className='bar1'></div>
+            <div className='bar2'></div>
+            <div className='bar3'></div>
         </div>
     );
-};
-
-MenuIcon.propTypes = {
-    iconClass: PropTypes.string,
 };
 
 export default MenuIcon;
