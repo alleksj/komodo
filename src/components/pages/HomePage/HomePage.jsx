@@ -3,7 +3,6 @@ import './HomePage.scss'
 import BackgroundImage from '../../atoms/BackgroundImage/BackgroundImage';
 import HomeInfo from '../../layouts/HomeInfo/HomeInfo';
 import React from 'react'
-import Svg from '../../atoms/Svg/Svg';
 import MenuIcon from '../../atoms/MenuIcon/MenuIcon';
 
 const HomePage = () => {
@@ -17,7 +16,6 @@ const HomePage = () => {
                     <img src={require('../../../images/logo.png')} alt='logo'/>
                     <h3>Bar - Restaurant</h3>
                 </div>
-                <Svg icon="scroll-down" className="scroll-down-icon"/>
             </div>
             
             <div className='bottom'>
