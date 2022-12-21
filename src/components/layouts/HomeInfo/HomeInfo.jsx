@@ -6,13 +6,17 @@ import React from 'react';
 const HomeInfo = () => {
     return (
         <div className="info-wrapper">
-            <div className="description">
-                <h2 className="title">Dobrodošli na najlepši splav na zemunskom keju.</h2>
-                <p className="subtitle">Posetite nas i uživajte u prijatnoj atmosferi našeg lokala kao i u ukusnoj hrani koju pripremamo za Vas.</p>
-                <Button />
+            <div className="left-wrapper">
+                <div className="description">
+                    <span className="info-title">Dobrodošli na najlepši splav na zemunskom keju.</span>
+                    <span className="info-subtitle">Posetite nas i uživajte u prijatnoj atmosferi našeg lokala kao i u ukusnoj hrani koju pripremamo za Vas.</span>
+                    <Button />
+                </div>
             </div>
-            <div className="separator"></div>
-            <img src={require("../../../images/home_food.jpg")} alt="dinner" className="info-image"></img>
+            <div className="separator" />
+            <div className="right-wrapper">
+                 <img src={require("../../../images/home_food.jpg")} alt="dinner" className="info-image"></img>
+            </div>
         </div>
     );
 };
