@@ -1,10 +1,10 @@
+import './Button.scss'
+
 import React from 'react';
 
-const Button = props => {
+const Button = ({ text, buttonClassName }) => {
     return (
-        <div>
-            Hello
-        </div>
+        <button className={buttonClassName}>{text}</button>
     );
 };
 

@@ -10,7 +10,7 @@ const HomeInfo = () => {
                 <div className="description">
                     <span className="info-title">Dobrodošli na najlepši splav na zemunskom keju.</span>
                     <span className="info-subtitle">Posetite nas i uživajte u prijatnoj atmosferi našeg lokala kao i u ukusnoj hrani koju pripremamo za Vas.</span>
-                    <Button />
+                    <Button text="O nama" buttonClassName="home-info-button"/>
                 </div>
             </div>
             <div className="separator" />
