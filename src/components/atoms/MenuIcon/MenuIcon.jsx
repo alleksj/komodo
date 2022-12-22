@@ -6,11 +6,6 @@ import MenuLayout from '../../layouts/MenuLayout/MenuLayout';
 const MenuIcon = () => {
     const [openMenu, setOpenMenu] = useState(false)
 
-    const showMenu = () => {
-        if (openMenu) {
-            return <MenuLayout />
-        }
-    }
 
     const toggleMenu = async (e) => {
         const menuLines = e.currentTarget.classList
@@ -25,7 +20,7 @@ const MenuIcon = () => {
             <div className='bar2'></div>
             <div className='bar3'></div>
         </div>
-        {showMenu()}
+        <MenuLayout openMenu={openMenu} />
         </>
     );
 };
