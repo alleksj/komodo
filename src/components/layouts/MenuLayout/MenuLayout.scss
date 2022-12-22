@@ -23,11 +23,11 @@
         span {
             margin: 15px 0;
             cursor: pointer;
-            border: solid rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(0, 0, 0, 0);
             padding: 15px;
 
             &:hover {
-                border: solid var(--white);
+                border: 1px solid var(--white);
             }
         }
     }

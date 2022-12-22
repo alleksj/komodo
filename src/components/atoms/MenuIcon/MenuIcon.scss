@@ -11,12 +11,14 @@
     width: 35px;
     height: 2px;
     background-color: var(--white);
-    margin: 8px 0;
+    margin: 7.4px 0;
     transition: 0.4s;
+    border: 0.1px solid var(--gold);
 }
 
 .change .bar1 {
     transform: rotate(-45deg) translate(-7px, 8px);
+    border: none;
 }
 
 .change .bar2 {
@@ -25,4 +27,5 @@
 
 .change .bar3 {
     transform: rotate(45deg) translate(-6px, -8px);
+    border: none;
 }
