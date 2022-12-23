@@ -1,6 +1,6 @@
 import "./HomeInfo.scss"
 
-import Button from "../../atoms/Button/Button";
+import Button from "../../atoms/Button";
 import React from 'react';
 
 const HomeInfo = () => {

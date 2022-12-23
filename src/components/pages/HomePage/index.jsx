@@ -1,9 +1,9 @@
 import './HomePage.scss'
 
-import BackgroundImage from '../../atoms/BackgroundImage/BackgroundImage'
-import HomeInfo from '../../layouts/HomeInfo/HomeInfo'
+import BackgroundImage from '../../atoms/BackgroundImage'
+import HomeInfo from '../../layouts/HomeInfo'
 import React, { useRef } from 'react'
-import MenuIcon from '../../atoms/MenuIcon/MenuIcon'
+import MenuIcon from '../../atoms/MenuIcon'
 
 const HomePage = () => {
     const ref = useRef(null)
@@ -15,7 +15,7 @@ const HomePage = () => {
     return (
         <div className='homepage-wrapper'>
             <div className='top'>
-                <MenuIcon />
+                <MenuIcon pageClassName="home"/>
                 <BackgroundImage type='home' />
                 <div className='title'>
                     <h1>Dobrodošli u</h1>

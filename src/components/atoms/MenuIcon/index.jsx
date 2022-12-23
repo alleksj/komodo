@@ -1,9 +1,9 @@
 import './MenuIcon.scss'
 
 import React, { useState } from 'react';
-import MenuLayout from '../../layouts/MenuLayout/MenuLayout';
+import MenuLayout from '../../layouts/MenuLayout';
 
-const MenuIcon = () => {
+const MenuIcon = ( {pageClassName} ) => {
     const [openMenu, setOpenMenu] = useState(false)
 
 
@@ -16,9 +16,9 @@ const MenuIcon = () => {
     return (
         <>
         <div className='menu-bars' onClick={toggleMenu}>
-            <div className='bar1'></div>
-            <div className='bar2'></div>
-            <div className='bar3'></div>
+            <div className={`bar1 ${pageClassName}`}></div>
+            <div className={`bar2 ${pageClassName}`}></div>
+            <div className={`bar3 ${pageClassName}`}></div>
         </div>
         <MenuLayout openMenu={openMenu} />
         </>
