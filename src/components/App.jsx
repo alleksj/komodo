@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage"
 import MenuPage from "./pages/MenuPage"
 import AboutUsPage from './pages/AboutUsPage'
 import GalleryPage from './pages/GalleryPage'
+import PrivateEvents from './pages/PrivateEvents'
 
 function App() {
     return (
@@ -15,7 +16,7 @@ function App() {
             <Route exact path="/menu" component={MenuPage}/>
             <Route exact path="/about-us" component={AboutUsPage}/>
             <Route exact path="/gallery" component={GalleryPage}/>
-            <Route exact path="/private-events" component={HomePage}/>
+            <Route exact path="/private-events" component={PrivateEvents}/>
         </Router>
     )
 }
